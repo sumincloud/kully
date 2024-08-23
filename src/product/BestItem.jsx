@@ -12,11 +12,11 @@ function BestItem(props) {
         {/* map함수를 활용하여 배열데이터 출력 */}
         <ul className='product_box'>
           {dummy.products.map(product=>(
-            <li key={product.title} className='product'>
+            <li key={product.name} className='product'>
               <div className='img_box'>
                 <img src={`${process.env.PUBLIC_URL}/images/${product.img}`} alt="상품이미지" />
               </div>
-              <div class="button-wrapper">
+              <div className="button-wrapper">
                 <button type="button">
                   <BsCart2 size={20} color="#333" />담기
                 </button>
